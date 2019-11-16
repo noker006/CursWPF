@@ -1,0 +1,4 @@
+﻿MACHINBmw BMW 56000 
+GalaxyAudi AUDI 60000 
+weReno RENO56000 
+MiMan MAN 35000 

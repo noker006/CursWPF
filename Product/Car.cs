@@ -8,6 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace CursWPF
 {
+    [Serializable]
     public class Car : INotifyPropertyChanged
     {
         private string title;

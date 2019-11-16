@@ -8,7 +8,8 @@ using System.Runtime.CompilerServices;
 
 namespace CursWPF
 {
-        public class Phone : INotifyPropertyChanged
+    [Serializable]
+    public class Phone : INotifyPropertyChanged
         {
             private string title;
             private string company;

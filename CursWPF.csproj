@@ -55,6 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="RelayCommand\Class1.cs" />
+    <Compile Include="ViewModels\GeneralViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\GeneralViewModels\ViewModel.cs" />
+    <Compile Include="ViewModels\GeneralViewModels\ViewModelManager.cs" />
     <Page Include="MainDictionary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -67,16 +71,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Car.cs" />
-    <Compile Include="Phone.cs" />
-    <Compile Include="ApplicationViewModel.cs" />
+    <Compile Include="Product\Car.cs" />
+    <Compile Include="Product\Phone.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Products.cs" />
+    <Compile Include="Product\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -101,6 +104,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Product\Car.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Product\Phone.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewModels\ViewModelObJect\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
